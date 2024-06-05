@@ -1,6 +1,6 @@
 # Restaurant-app 
 
-Repository ini berisi proyek submission kedua atau terakhir Dicoding pada kelas Belajar Fundamental Front-End Web Development.
+Repository ini berisi proyek submission pertama Dicoding pada kelas Belajar Front-End expert Web Development.
 
 # Cara menjalankan website:
 
