@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Apps</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to Content</a>
+  <header class="header-bar">
+    <div class="logo">Hunger Apps</div>
+    <button class="hamburger" aria-label="Open navigation menu">&#9776;</button>
+    <nav class="nav-menu" role="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Favorite</a></li>
+        <li><a href="http://www.linkedin.com/in/ramaditya-eka-11aa60229">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="nav-drawer" id="nav-drawer">
+    <button class="close-drawer" aria-label="Close navigation menu">&times;</button>
+    <nav role="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Favorite</a></li>
+        <li><a href="http://www.linkedin.com/in/ramaditya-eka-11aa60229">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main-content" tabindex="0">
+    <div class="hero">
+      <img src="./images/heros/hero-image_2.jpg" alt="Delicious food" class="hero-img">
+      <div class="hero-text">
+        <h1>Welcome to Hunger Apps</h1>
+        <p>Your favorite food delivered fast</p>
+      </div>
+    </div>
+    <section class="intro">
+      <h1>Restaurant Apps Starter Project</h1>
+      <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
+      <p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen.</p>
+    </section>
+    <section id="restaurant-list" class="restaurant-list">
+    </section>
+  </main>
+
+  <footer class="footer-bar">
+    <p>&copy; 2024 - Hunger Apps</p>
+  </footer>
+  <script src="/app.js"></script>
+  <script>document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('#nav-drawer').classList.add('open');
+  });
+  
+  document.querySelector('.close-drawer').addEventListener('click', () => {
+    document.querySelector('#nav-drawer').classList.remove('open');
+  });
+  </script>
+</body>
+</html>
